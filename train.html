@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking Form</title>
+    <style>
+        .b{
+            background-image: url('7.jpg');
+          /* Full height */
+           height: 100%; 
+           
+
+           /* Center and scale the image nicely */
+         background: position 100px;
+           background-repeat: repeat;
+           background-size: cover;
+           text-align: center;
+           font-style: italic;
+           padding-top: 120px;
+        }
+    </style>
+</head>
+<body class="b">
+    <h1>Train Ticket Booking Form</h1>
+    <form action="/submit_booking" method="POST">
+        <label for="name">Passenger Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="date_of_travel">Date of Travel:</label>
+        <input type="date" id="date_of_travel" name="date_of_travel" required><br><br>
+
+        <label for="class_of_travel">Class of Travel:</label>
+        <select id="class_of_travel" name="class_of_travel" required>
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="first_class">First Class</option>
+        </select><br><br>
+
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required><br><br>
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required><br><br>
+
+        <fieldset>
+            <legend>Payment Options:</legend>
+            <input type="radio" id="credit_card" name="payment_method" value="credit_card" required>
+            <label for="credit_card">Credit Card</label><br>
+            
+            <input type="radio" id="debit_card" name="payment_method" value="debit_card">
+            <label for="debit_card">Debit Card</label><br>
+            
+            <input type="radio" id="paypal" name="payment_method" value="paypal">
+            <label for="paypal">PayPal</label><br>
+            
+            <input type="radio" id="net_banking" name="payment_method" value="net_banking">
+            <label for="net_banking">Net Banking</label><br>
+        </fieldset><br>
+
+        <input type="submit" value="Book Ticket">
+    </form>
+    <p style="text-align: center;"><button type="button"><a href="index.html">home</a></button>
+    </p>
+</body>
+</html>

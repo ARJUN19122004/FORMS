@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        .b{
+               
+            background-image: url('16.jpg');
+            /* Full height */
+            padding-bottom: 100px;
+            padding-top: 150px;
+            height: 100%; 
+    
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             font-style: italic;
+        
+            color:black;
+            text-align: left;
+            font-size: large;
+          
+       
+      
+       
+
+          }
+          </style>
+</head>
+<body class="b">
+    <h1>Order Form</h1>
+    <form action="/submit_order" method="POST">
+        <label for="name">Name:</label>
+        <input type="name" id="name" name="name" required><br><br>
+        <label for="age">Age:</label>
+        <input type="age" id="age" name="age" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="product">Product:</label>
+        <input type="text" id="product" name="product" required><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+
+        <label for="address">Shipping Address:</label>
+        <textarea id="address" name="address" required></textarea><br><br>
+
+        <input type="submit" value="Place Order">
+    </form>
+    <p style="text-align: left;"><button type="button"><a href="index.html">home</a></button>
+    </p>
+</body>
+</html>

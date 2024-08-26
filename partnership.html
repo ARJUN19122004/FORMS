@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Partnership Form</title>
+
+    <style>
+        .b{
+               
+            background-image: url('13.jpg');
+            /* Full height */
+             height: 100%; 
+    
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             font-style: italic;
+             padding-top: 250px;
+            color: darkturquoise;
+        
+          }
+          </style>
+</head>
+<body class='b'>
+    <h2>Partnership Form</h2>
+    <form action="/submit_partnership" method="post">
+        <label for="company_name">Company Name:</label><br>
+        <input type="text" id="company_name" name="company_name" required><br><br>
+
+        <label for="contact_name">Contact Person's Name:</label><br>
+        <input type="text" id="contact_name" name="contact_name" required><br><br>
+
+        <label for="contact_email">Contact Person's Email:</label><br>
+        <input type="email" id="contact_email" name="contact_email" required><br><br>
+
+        <label for="partnership_details">Partnership Details:</label><br>
+        <textarea id="partnership_details" name="partnership_details" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p style="text-align: left;"><button type="button"><a href="index.html">home</a></button>
+    </p>
+</body>
+</html>

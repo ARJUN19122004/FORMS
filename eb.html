@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Payment Form</title>
+    <style>
+        .b{
+               
+            background-image: url('18.png');
+            /* Full height */
+            padding-bottom: 160px;
+            padding-top: 250px;
+            height: 100%; 
+    
+             /* Center and scale the image nicely */
+             background-position:center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             font-style: italic;
+             padding-left: 150px;
+            
+           
+           
+        
+            color:black;
+            text-align: left;
+            font-size: large;
+          
+       
+      
+       
+
+          }
+          </style>
+   
+    
+</head>
+<body class="b">
+    
+    <h1>Electricity Bill Payment Form</h1>
+
+    <form action="/submit_eb_payment" method="POST">
+        <label for="account_number">Account Number:</label>
+        <input type="text" id="account_number" name="account_number" required><br><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required><br><br>
+
+        <label for="payment_method">Payment Method:</label>
+        <select id="payment_method" name="payment_method" required>
+            <option value="credit_card">Credit Card</option>
+            <option value="debit_card">Debit Card</option>
+            <option value="net_banking">Net Banking</option>
+        </select><br><br>
+
+        <input type="submit" value="Pay Bill">
+    </form>
+</div>
+<p style="text-align: left;"><button type="button"><a href="index.html">home</a></button>
+</p>
+</body>
+</html>

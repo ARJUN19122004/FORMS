@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Referral Form</title>
+    <style>
+        .b{
+            text-align: left;
+          background-image: url('10.jpg');
+          /* Full height */
+           height: 100%; 
+
+           /* Center and scale the image nicely */
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: contain;
+           font-style: italic;
+           padding-left: 100px;
+          color: blue;
+
+        }
+    </style>
+</head>
+<body class="b">
+    <h2>Referral Form</h2>
+    <form action="/submit_referral" method="post">
+        <label for="referrer_name">Your Name:</label><br>
+        <input type="text" id="referrer_name" name="referrer_name" required><br><br>
+
+        <label for="referrer_email">Your Email:</label><br>
+        <input type="email" id="referrer_email" name="referrer_email" required><br><br>
+
+        <label for="candidate_name">Candidate's Name:</label><br>
+        <input type="text" id="candidate_name" name="candidate_name" required><br><br>
+
+        <label for="candidate_email">Candidate's Email:</label><br>
+        <input type="email" id="candidate_email" name="candidate_email" required><br><br>
+
+        <label for="candidate_position">Position Referred For:</label><br>
+        <input type="text" id="candidate_position" name="candidate_position" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p style="text-align: left;"><button type="button"><a href="index.html">home</a></button>
+    </p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Application Form</title>
+    <style>
+        .b{
+               
+            background-image: url('19.webp');
+            /* Full height */
+            padding-bottom: 100px;
+            padding-top: 150px;
+            height: 100%; 
+    
+             /* Center and scale the image nicely */
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             font-style: italic;
+        
+            color:black;
+            text-align: left;
+            font-size: large;
+          
+       
+      
+       
+
+          }
+          </style>
+</head>
+<body class="b">
+    <h1>Visa Application Form</h1>
+    <form action="/submit_visa_application" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="age" id="age" name="age" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="passport_number">Passport Number:</label>
+        <input type="text" id="passport_number" name="passport_number" required><br><br>
+
+        <label for="country">Country of Destination:</label>
+        <input type="text" id="country" name="country" required><br><br>
+
+        <label for="travel_dates">Travel Dates:</label>
+        <input type="date" id="travel_start" name="travel_start" required>
+        <input type="date" id="travel_end" name="travel_end" required><br><br>
+
+        <input type="submit" value="Apply for Visa">
+    </form>
+    <p style="text-align: left;"><button type="button"><a href="index.html">home</a></button>
+    </p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nomination Form</title>
+    <style>
+    .b{
+           
+        background-image: url('12.jpg');
+        /* Full height */
+         height: 100%; 
+
+         /* Center and scale the image nicely */
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         font-style: italic;
+         padding-top: 50px;
+        
+       
+        
+
+      }
+    </style>
+</head>
+<body class="b">
+    <h2>Nomination Form</h2>
+    <form action="/submit_nomination" method="post">
+        <label for="nominator_name">Your Name:</label><br>
+        <input type="text" id="nominator_name" name="nominator_name" required><br><br>
+
+        <label for="nominator_email">Your Email:</label><br>
+        <input type="email" id="nominator_email" name="nominator_email" required><br><br>
+
+        <label for="nominee_name">Nominee's Name:</label><br>
+        <input type="text" id="nominee_name" name="nominee_name" required><br><br>
+
+        <label for="nominee_email">Nominee's Email:</label><br>
+        <input type="email" id="nominee_email" name="nominee_email" required><br><br>
+
+        <label for="reason">Reason for Nomination:</label><br>
+        <textarea id="reason" name="reason" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p style="text-align: left;"><button type="button"><a href="index.html">home</a></button>
+    </p>
+</body>
+</html>
